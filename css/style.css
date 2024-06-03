@@ -1,0 +1,119 @@
+*{
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+}
+#board, .boardInfo{
+    max-width: 500px;
+    margin-top: 200px;
+}
+body{
+  background: url('../imgs/gif.gif') no-repeat center center fixed;
+  background-color: #2b224a;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#start, .boardInfo  {
+    font-size: 30px;
+}
+#gameOver{
+    display: contents;
+}
+.boardInfo{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #3bcb3f;
+}
+.btn-34,
+.btn-34 *,
+.btn-34 :after,
+.btn-34 :before,
+.btn-34:after,
+.btn-34:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-34 {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  background-image: none;
+  color: #3bcb3f;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-34:disabled {
+  cursor: default;
+}
+.btn-34:-moz-focusring {
+  outline: auto;
+}
+.btn-34 svg {
+  display: block;
+}
+.btn-34 [hidden] {
+  display: none;
+}
+.btn-34 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-34:hover {
+  transform: scale(1.1);
+}
+.btn-34 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-34:before {
+  aspect-ratio: 1;
+  background: #69b350;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  width: 0;
+}
+.btn-34:hover:before {
+  width: 100%;
+}
+.btn-34 {
+    font-size: 20px; /* Reducir el tamaño del texto */
+    padding: 0.1rem 1rem; /* Reducir el espacio interno del botón */
+    border-radius: 2rem; /* Hacer el borde más redondeado */
+    border-width: 2px; /* Hacer el borde más delgado */
+  }
+  .btn-34:hover {
+    transform: scale(0.9); /* Reducir el tamaño al pasar el ratón */
+  }
+  
+  .btn-34:active {
+    transform: scale(0.9); /* Mantener el tamaño reducido al hacer clic */
+  }
+#scoreBoard{
+    display: inline-flex;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background-color: #3f2222;
+}
+.snakeSquare{
+    background-color: #5a612c;
+}
+.foodSquare{
+    background-color: #d11e1e;
+}
